@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+    #btn{
+        width: 361px;
+        height: 40px;
+        color: mediumslateblue;
+        background-image: url(/logo/下载.jpg);
+    }
+
+</style>
+<script>
+    function jump(){
+     window.location.href="http://127.0.0.1:5500/page2.html";
+    }
+    function rep1(){
+        document.getElementById('zhangsan').style.display="block";
+    }
+    function rep2(){
+        document.getElementById('lisi').style.display="block";
+    }
+    function rep3(){
+        document.getElementById('wangwu').style.display="block";
+    }
+    function rep4(){
+        document.getElementById('mdzz').style.display="block";
+    }
+    </script>
+<body background="/logo/下载 (2).jpg">
+<div style="height: 1200px;width: 1000px;">
+    <div style="float: left;">
+    <div id="list"><img src="/logo/好友列表上部.png"></div>
+    <div><img src="/logo/张三.png" onclick="javascript:rep1()"></div> 
+    <div><img src="/logo/李四.png" onclick="javascript:rep2()"></div> 
+    <div><img src="/logo/王五.png" onclick="javascript:rep3()"></div> 
+    <div><img src="/logo/编不出来了.png" onclick="javascript:rep4()"></div>
+    <button id="btn" onclick="javascript:jump()"><b>空间相册(到处戳戳看哦，说不定有惊喜）</b></button> 
+    <div ><img src="/logo/好友名单底.png" ></div>
+</div>
+ <div style="float: right;background-color: mediumturquoise;">
+    <img src="/logo/张三对话.png" id="zhangsan" style="display: none;" >
+    <img src="/logo/李四对话.png" id="lisi" style="display: none;">
+    <img src="/logo/王五对话.png" id="wangwu" style="display: none;">
+    <img src="/logo/mdzz对话.png" id="mdzz" style="display: none;">
+ </div>
+</div>
+</body>
+</html>
